@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.ganeshtikone.componets.SignInActivity"
+        tools:showIn="@layout/activity_sign_in">
+
+        <ImageView
+            android:layout_marginTop="80dp"
+            android:contentDescription="@string/user_profile_picture"
+            android:src="@drawable/demo"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="140dp"
+            android:layout_height="140dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edittext_first_name">
+
+            <EditText
+                android:id="@+id/editTextFirstName"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <EditText
+            android:id="@+id/editTextMiddleName"
+            android:inputType="textPersonName"
+            android:layout_marginTop="16dp"
+            android:hint="@string/edittext_middle_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:inputType="textPersonName"
+            android:layout_marginTop="16dp"
+            android:hint="@string/edittext_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/editTextMobile"
+            android:inputType="phone"
+            android:layout_marginTop="16dp"
+            android:hint="@string/editext_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:focusableInTouchMode="false"
+            android:layout_marginTop="16dp"
+            android:hint="@string/date_of_birth"
+            android:id="@+id/editTextDateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:inputType="text"
+            android:layout_marginTop="16dp"
+            android:hint="@string/date_of_birth"
+            android:id="@+id/editTextRandom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <CheckBox
+            android:layout_marginTop="16dp"
+            android:id="@+id/checkboxTerms"
+            android:text="@string/please_accept_tersm_and_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/buttonSignup"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            android:text="@string/button_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
